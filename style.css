@@ -25,10 +25,13 @@
   }
 }
 
-.brain {
+.laser {
   animation: blink 0.5s infinite;
   -webkit-animation: blink 0.5s infinite;
   -moz-animation: blink 0.5s infinite;
+}
+
+.brain {
   background: radial-gradient(circle, white 15%, transparent 40px), #cc5;
   background: -moz-radial-gradient(circle, white 15%, transparent 40px), #cc5;
   background-size: 75px;
@@ -87,5 +90,26 @@
   left: 110px;
   top: -10px;
   z-index: -1;
+}
+
+@keyframes dance {
+  from {
+    left: 800px;
+  }
+}
+
+@-webkit-keyframes dance {
+  from {
+    left: 800px;
+  }
+}
+
+img {
+  animation: dance 4s infinite;
+  -webkit-animation: dance 4s infinite;
+  -moz-animation: dance 4s infinite;
+  position: absolute;
+  top: 200px;
+  left: 400px;
 }
 /*# sourceMappingURL=style.css.map */
